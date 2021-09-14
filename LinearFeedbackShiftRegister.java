@@ -10,6 +10,26 @@
   1 ^ 0 = 1
   1 ^ 1 = 0
 
+
+*** Sample Output:
+
+   0.  1 0 0 1    -> 1
+   1.  1 1 0 0    -> 0
+   2.  0 1 1 0    -> 0
+   3.  1 0 1 1    -> 1
+   4.  0 1 0 1    -> 1
+   5.  1 0 1 0    -> 0
+   6.  1 1 0 1    -> 1
+   7.  1 1 1 0    -> 0
+   8.  1 1 1 1    -> 1
+   9.  0 1 1 1    -> 1
+  10.  0 0 1 1    -> 1
+  11.  0 0 0 1    -> 1
+  12.  1 0 0 0    -> 0
+  13.  0 1 0 0    -> 0
+  14.  0 0 1 0    -> 0
+  15.  1 0 0 1    -> 1
+
 */
 public class LinearFeedbackShiftRegister
 {
@@ -57,7 +77,7 @@ public class LinearFeedbackShiftRegister
    {
       int shiftResult = 0;
       int output = 0;
-      int maxCombinations = Math.pow (SIZE, 2);
+      int maxCombinations = (int) Math.pow (SIZE, 2);
 
       for (int k = 0; k < array.length - 1; k++)
       {
